@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+}
+
+.header-left {
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+
+.header-left img {
+    height: 100%;
+    position: absolute;
+    left: 120px;
+}
+
+.header-center {
+    width: 60%;
+    height: 100%;
+}
+
+.header-center ul {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-center ul li {
+    margin: 0 30px;
+}
+
+.header-right {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon {
+    position: absolute;
+    right: 120px;
+}
+
+.nav-icon i {
+    margin-left: 20px;
+    font-size: 20px;
+}

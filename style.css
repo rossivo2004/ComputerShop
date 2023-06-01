@@ -20,10 +20,61 @@ header {
     width: 100%;
     height: 80px;
     display: flex;
-
+position: relative;
     font-family: 'Cabin', sans-serif;
     font-weight: bold;
 }
+
+a.menu-mobile{
+    /* display: none; */
+}
+
+.menu-hd {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    background-color: #7CF2FA;
+    transform: translateX(1000px);
+    display: none;
+    transition: 1s;
+}
+
+.menu-hd__nav-icon {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.menu-hd__nav-icon i{
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+.menu-hd__list{
+    
+}
+
+.menu-hd__list li {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+i.fa-solid.fa-xmark {
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+i.fa-solid.fa-bars {
+    display: none;
+}
+
+
+/* -----------------------------------Header-left ------------------------------*/
 
 .header-left {
     width: 20%;
@@ -53,11 +104,15 @@ header {
     margin: 0 30px;
 }
 
+/*--------------------------------- header-right----------------------------------------- */
+
 .header-right {
     width: 20%;
     display: flex;
     align-items: center;
 }
+
+
 
 .nav-icon {
     position: absolute;
@@ -74,7 +129,7 @@ header {
 }
 
 .infor {
-    width: 930px;
+    max-width: 930px;
     margin: 0 auto;
 }
 
@@ -110,7 +165,7 @@ header {
 }
 
 .container-chil {
-    width: 1192px;
+    max-width: 1192px;
 
     margin: 0 auto;
 
@@ -757,12 +812,3 @@ i.fa-brands.fa-square-instagram {
     margin-right: 10px;
 }
 
-/*---------------------- Responsive---------------------- */
-
-/* Mobile */
-@media (max-width: 740px){
-    .header-center,
-    .header-right{
-        display: none;  
-    }
-}
