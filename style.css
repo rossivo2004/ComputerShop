@@ -756,3 +756,13 @@ i.fa-brands.fa-square-instagram {
     font-size: 25px;
     margin-right: 10px;
 }
+
+/*---------------------- Responsive---------------------- */
+
+/* Mobile */
+@media (max-width: 740px){
+    .header-center,
+    .header-right{
+        display: none;  
+    }
+}
